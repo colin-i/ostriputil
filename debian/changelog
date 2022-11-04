@@ -1,4 +1,4 @@
-ostriputil (1-1+1) bionic; urgency=low
+ostriputil (1-1+2) bionic; urgency=low
 
   * Initial release. Closes: #nnnn
     <nnnn is the bug number of your ITP>

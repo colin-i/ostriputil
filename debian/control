@@ -1,8 +1,8 @@
 Source: ostriputil
-Section: unknown
+Section: python
 Priority: optional
 Maintainer: Botescu Costin <costin.botescu@gmail.com>
-Build-Depends: debhelper-compat (= 12), dh-python, python3-all, python3-setuptools
+Build-Depends: debhelper-compat (= 11), dh-python, python3-all, python3-setuptools
 Standards-Version: 4.5.0
 Homepage: <insert the upstream URL, if relevant>
 X-Python3-Version: >= 3.2

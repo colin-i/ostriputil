@@ -1,0 +1,6 @@
+ostriputil (1-1) bionic; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- Botescu Costin <costin.botescu@gmail.com>  Fri, 04 Nov 2022 10:34:28 +0200

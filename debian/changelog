@@ -1,3 +1,9 @@
+ostriputil (1-1+4) xenial; urgency=medium
+
+  * another objcopy
+
+ -- bc <bc@bc-desktop>  Mon, 21 Jul 2025 11:16:58 +0300
+
 ostriputil (1-1+2) bionic; urgency=low
 
   * Initial release. Closes: #nnnn

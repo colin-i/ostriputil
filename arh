@@ -1,8 +1,8 @@
-
-set -3
+set -e
+tars='bionic focal jammy'
 ~/test/debinit2b
 ~/test/deb
 ~/test/publp
 ~/test/publp2
-~/test/lp
-~/test/lp x
+~/test/lp 0 "${tars}"
+~/test/lp x "${tars}"

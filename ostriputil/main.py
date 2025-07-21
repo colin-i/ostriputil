@@ -7,6 +7,10 @@ def main():
 
 	inputfile=sys.argv[1]
 	outputfile=sys.argv[2]
+	if len(sys.argv)>3:
+		obcop=sys.argv[3]
+	else:
+		obcop="objcopy"
 
 	txt=subprocess.check_output(['/bin/bash','-c',"printf '%s' $(objdump -h "+inputfile+" | grep ' .data ' | tr -s ' ' | cut -d ' ' -f 4)"])
 	unstripped_size=int(txt,base=16)
@@ -45,7 +49,7 @@ def main():
 				with open(s3,'rb') as s:
 					f.write(s.read())
 	s4=".rela.dyn"
-	objcopy=["objcopy",outputfile,"--update-section",s1+"="+s1,"--update-section",s2+"="+s2]
+	objcopy=[obcop,outputfile,"--update-section",s1+"="+s1,"--update-section",s2+"="+s2]
 	if (os.path.exists(s4)):
 		objcopy.append("--update-section")
 		objcopy.append(s4+"="+s4)
